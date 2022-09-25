@@ -64,7 +64,7 @@ textarea {
     right: 30px;
 }
 /* 4.53 */
-.contact-form::before{
+/* .contact-form::before{
     content: "";
     position: absolute;
     width: 26px;
@@ -74,7 +74,19 @@ textarea {
     top: 50px;
     left: -13px; 
     
-}
+} */
+/* down shape*/
+/* .contact-form::after{
+    content: "";
+    position: absolute;
+    width: 26px;
+    height: 26px;
+    background-color: rgb(12, 167, 167);
+    transform: rotate(45deg);
+    top: 380px;
+    left: -13px; 
+    
+} */
 
 form{
     padding: 2.3rem 2.2rem;
@@ -167,8 +179,8 @@ textarea.input{
     
 }
 
-.input-container span::before,
-.input-container span::after{
+.input-container span:before,
+.input-container span:after{
     content: "";
     position: absolute;
     width: 10%;
@@ -193,9 +205,35 @@ textarea.input{
     font-size: 0.8rem;
 }
 
-.input-container.focus  span::before,
-.input-container.focus  span::after{
+.input-container.focus  span:before,
+.input-container.focus  span:after{
 
   width: 50%;
   opacity: 1;
 }
+
+/*effcet*/
+.effect-wrap .effect{
+    position: absolute;
+    z-index: -1;
+}
+.effect-1{
+    width: 170px;
+    height: 170px;
+    border: 18px solid #2c9e6f;
+    border-radius: 50%;
+    opacity: 0.4;
+    right: 43%;
+    bottom: 51%;
+    animation: spin 3s ease-in-out infinite;
+}
+
+@keyframes spin{
+    0%,100%{
+        transform: translate(0);
+    }
+    50%{
+        transform: translate(25px);
+    }
+}
+
