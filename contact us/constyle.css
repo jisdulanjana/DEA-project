@@ -28,7 +28,7 @@ textarea {
 .form {
     width: 100%;
     max-width: 820px;
-    
+
     background-color: #fff;
     border-radius: 10px;
     box-shadow: 0 0 20px 1px rgba(0, 0, 0, 1);
@@ -41,16 +41,16 @@ textarea {
 .contact-form{
     background-color: rgb(12, 167, 167);
     position: relative;
-    
+
 }
 
 .circle {
-    
+
     border-radius: 50%;
     background:linear-gradient(135deg,transparent 20%,#45916f);
     position: absolute;
-    
-} 
+
+}
 .circle.one{
     width: 130px;
     height: 130px;
@@ -72,8 +72,8 @@ textarea {
     background-color: rgb(12, 167, 167);
     transform: rotate(45deg);
     top: 50px;
-    left: -13px; 
-    
+    left: -13px;
+
 } */
 /* down shape*/
 /* .contact-form::after{
@@ -84,8 +84,8 @@ textarea {
     background-color: rgb(12, 167, 167);
     transform: rotate(45deg);
     top: 380px;
-    left: -13px; 
-    
+    left: -13px;
+
 } */
 
 form{
@@ -101,11 +101,13 @@ form{
     font-size: 1.5rem;
     line-height: 1;
     margin-bottom: 0.7rem;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 .input-container{
     position: relative;
     margin: 1rem 0;
+    font-family:Arial, Helvetica, sans-serif;
 }
 
 
@@ -176,7 +178,7 @@ textarea.input{
     color: transparent;
     pointer-events: none;
     z-index: 500;
-    
+
 }
 
 .input-container span:before,
@@ -223,7 +225,7 @@ textarea.input{
     border: 18px solid #2c9e6f;
     border-radius: 50%;
     opacity: 0.4;
-    right: 43%;
+    left: 80%;
     bottom: 51%;
     animation: spin 3s ease-in-out infinite;
 }
@@ -237,3 +239,33 @@ textarea.input{
     }
 }
 
+.contact-info {
+  padding: 2.3rem 2.2rem;
+  position: relative;
+}
+
+.contact-info h2{
+  color: #1abc9c;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.text{
+  color: rgb(34, 33, 33);
+  margin: 1.5rem 0 2rem 0;
+  font-family:'Times New Roman', Times, serif;
+}
+
+.information{
+  display: flex;
+  color: rgb(49, 48, 48);
+  margin: 2.7rem 0;
+  align-items: center;
+  font-size: 0.95rem;
+  font-family: 'Times New Roman', Times, serif;
+  font-weight: bolder;
+}
+
+.information i{
+  width: 40px;
+  margin-right: 0.7rem;
+}
